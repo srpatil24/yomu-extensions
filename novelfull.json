@@ -1,0 +1,54 @@
+{
+  "id": "novelfull",
+  "name": "NovelFull",
+  "base_url": "https://novelfull.net",
+  "lang": "en",
+  "version": "1.0",
+  "author": "Yomu Team",
+  "description": "Large collection of translated novels from various languages",
+  "icon_url": "https://novelfull.net/favicon.ico",
+  "selectors": {
+    "search": {
+      "novel_list": ".list-truyen .row",
+      "novel_title": "h3.truyen-title a",
+      "novel_author": ".author",
+      "novel_cover": ".cover img",
+      "novel_url": "h3.truyen-title a",
+      "next_page": ".next"
+    },
+    "novel": {
+      "title": "h3.title",
+      "author": ".info div:contains('Author:') a",
+      "description": ".desc-text",
+      "cover": ".book img",
+      "status": ".info div:contains('Status:') span",
+      "genres": ".info div:contains('Genre:') a",
+      "chapter_list": "#list-chapter .row",
+      "chapter_title": "a",
+      "chapter_url": "a"
+    },
+    "chapter": {
+      "content": "#chapter-content",
+      "title": ".chapter-title",
+      "next_chapter": ".next",
+      "prev_chapter": ".prev"
+    }
+  },
+  "urls": {
+    "search": "/search?keyword={query}&page={page}",
+    "popular": "/most-popular?page={page}",
+    "latest": "/latest-release?page={page}",
+    "novel_detail": "{novel_url}"
+  },
+  "settings": {
+    "delay_between_requests": 2500,
+    "max_concurrent_requests": 1,
+    "use_cloudflare_bypass": false,
+    "custom_headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
+      "Referer": "https://novelfull.net/"
+    },
+    "requires_login": false,
+    "search_delay": 1500
+  }
+} 
