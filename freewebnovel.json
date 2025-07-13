@@ -1,12 +1,12 @@
 {
-  "id": "novelbuddy",
-  "name": "NovelBuddy",
-  "base_url": "https://novelbuddy.io",
+  "id": "freewebnovel",
+  "name": "FreeWebNovel",
+  "base_url": "https://freewebnovel.com",
   "lang": "en",
   "version": "1.0",
   "author": "Yomu Team",
-  "description": "Modern web novel reading platform with comprehensive novel database",
-  "icon_url": "https://novelbuddy.io/favicon.ico",
+  "description": "Free web novel reading site with large collection of translated novels",
+  "icon_url": "https://freewebnovel.com/favicon.ico",
   "selectors": {
     "search": {
       "novel_list": ".novel-item",
@@ -17,13 +17,13 @@
       "next_page": ".pagination .next"
     },
     "novel": {
-      "title": "h1",
+      "title": "h1, h3",
       "author": ".novel-author",
-      "description": ".novel-description, .summary",
+      "description": ".novel-description, .description",
       "cover": ".novel-cover img",
       "status": ".novel-status",
       "genres": ".novel-genres .genre, .genres a",
-      "chapter_list": ".chapter-list .chapter-item",
+      "chapter_list": ".chapter-list .chapter, .chapter-item",
       "chapter_title": "a",
       "chapter_url": "a",
       "chapter_date": ".chapter-date"
@@ -37,7 +37,7 @@
   },
   "urls": {
     "search": "/search?q={query}&page={page}",
-    "popular": "/top/month?page={page}",
+    "popular": "/sort/most-popular?page={page}",
     "latest": "/latest?page={page}",
     "novel_detail": "{novel_url}"
   },

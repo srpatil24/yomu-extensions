@@ -1,12 +1,12 @@
 {
-  "id": "novelbuddy",
-  "name": "NovelBuddy",
-  "base_url": "https://novelbuddy.io",
+  "id": "novelfire",
+  "name": "NovelFire",
+  "base_url": "https://novelfire.net",
   "lang": "en",
   "version": "1.0",
   "author": "Yomu Team",
-  "description": "Modern web novel reading platform with comprehensive novel database",
-  "icon_url": "https://novelbuddy.io/favicon.ico",
+  "description": "Popular web novel reading platform with trending and ranking features",
+  "icon_url": "https://novelfire.net/favicon.ico",
   "selectors": {
     "search": {
       "novel_list": ".novel-item",
@@ -17,12 +17,12 @@
       "next_page": ".pagination .next"
     },
     "novel": {
-      "title": "h1",
-      "author": ".novel-author",
-      "description": ".novel-description, .summary",
-      "cover": ".novel-cover img",
-      "status": ".novel-status",
-      "genres": ".novel-genres .genre, .genres a",
+      "title": "h1, .book-title",
+      "author": ".book-author",
+      "description": ".book-description, .summary",
+      "cover": ".book-cover img",
+      "status": ".book-status",
+      "genres": ".book-genres .genre, .genres a",
       "chapter_list": ".chapter-list .chapter-item",
       "chapter_title": "a",
       "chapter_url": "a",
@@ -37,9 +37,10 @@
   },
   "urls": {
     "search": "/search?q={query}&page={page}",
-    "popular": "/top/month?page={page}",
+    "popular": "/ranking?page={page}",
     "latest": "/latest?page={page}",
-    "novel_detail": "{novel_url}"
+    "novel_detail": "{novel_url}",
+    "chapter_list": "{novel_url}/chapters?page={page}"
   },
   "settings": {
     "delay_between_requests": 3000,
