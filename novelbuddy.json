@@ -1,0 +1,54 @@
+{
+  "id": "novelbuddy",
+  "name": "NovelBuddy",
+  "base_url": "https://novelbuddy.io",
+  "lang": "en",
+  "version": "1.0",
+  "author": "Yomu Team",
+  "description": "Web novel platform offering popular light novels",
+  "icon_url": "https://novelbuddy.io/favicon.ico",
+  "selectors": {
+    "search": {
+      "novel_list": ".book-item",
+      "novel_title": ".book-name",
+      "novel_cover": "img.book-cover",
+      "novel_url": "a.book-link",
+      "next_page": ".pagination-next a"
+    },
+    "novel": {
+      "title": "h1.book-name",
+      "author": ".author-text a",
+      "description": ".book-detail p",
+      "cover": ".book-cover img",
+      "status": ".header-stats .status",
+      "genres": ".categories a",
+      "chapter_list": ".chapter-list li",
+      "chapter_title": "a",
+      "chapter_url": "a",
+      "chapter_date": ".chapter-time"
+    },
+    "chapter": {
+      "content": ".chapter-content",
+      "title": "h1.chapter-title",
+      "next_chapter": ".nav-next a",
+      "prev_chapter": ".nav-prev a"
+    }
+  },
+  "urls": {
+    "search": "/home?search={query}&page={page}",
+    "popular": "/top/month?page={page}",
+    "latest": "/home?page={page}",
+    "novel_detail": "{novel_url}"
+  },
+  "settings": {
+    "delay_between_requests": 2500,
+    "max_concurrent_requests": 1,
+    "use_cloudflare_bypass": false,
+    "custom_headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
+      "Referer": "https://novelbuddy.io/"
+    },
+    "requires_login": false,
+    "search_delay": 1000
+  }
+}
