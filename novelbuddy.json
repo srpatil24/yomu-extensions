@@ -25,7 +25,7 @@
       "status": "div.meta:nth-child(2) > p:nth-child(2) > a:nth-child(2) > span:nth-child(1)",
       "genres": ".novel-genres .genre, .genres a",
       "chapter_list": "ul.chapter-list li",
-      "chapter_title": "a",
+      "chapter_title": "a div .chapter-title",
       "chapter_url": "a",
       "chapter_list_expand_button": "#show-more-chapters span"
     },
