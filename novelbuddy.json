@@ -49,7 +49,7 @@
       "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
     },
     "requires_login": false,
-    "reverse_chapter_order": false,
+    "reverse_chapter_order": true,
     "search_delay": 1500
   }
 }
