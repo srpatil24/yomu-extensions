@@ -7,6 +7,7 @@
   "author": "Yomu Team",
   "description": "Modern web novel reading platform with comprehensive novel database",
   "icon_url": "https://novelbuddy.io/favicon.ico",
+  
   "selectors": {
     "search": {
       "novel_list": ".book-item",
@@ -26,8 +27,7 @@
       "chapter_list": ".chapter-list li",
       "chapter_title": "a",
       "chapter_url": "a",
-      "chapter_date": "#c-1 > a:nth-child(1) > div:nth-child(1) > time:nth-child(2)",
-      "chapter_list_expand_button": "#show-more-chapters > span:nth-child(1)"
+      "chapter_list_expand_button": "#show-more-chapters"
     },
     "chapter": {
       "content": ".content-inner",
@@ -36,12 +36,14 @@
       "prev_chapter": "#btn-prev"
     }
   },
+  
   "urls": {
     "search": "/search?q={query}&page={page}",
     "popular": "/top/month?page={page}",
     "latest": "/latest?page={page}",
     "novel_detail": "{novel_url}"
   },
+  
   "settings": {
     "delay_between_requests": 3000,
     "max_concurrent_requests": 1,
