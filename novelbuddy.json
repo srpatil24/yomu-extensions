@@ -9,10 +9,10 @@
   "icon_url": "https://novelbuddy.io/favicon.ico",
   "selectors": {
     "search": {
-      "novel_list": ".novel-item",
-      "novel_title": ".novel-title",
+      "novel_list": ".book-item",
+      "novel_title": "h3 a",
       "novel_author": ".novel-author",
-      "novel_cover": ".novel-cover img",
+      "novel_cover": "a img",
       "novel_url": ".novel-title a",
       "next_page": ".pagination .next"
     },
