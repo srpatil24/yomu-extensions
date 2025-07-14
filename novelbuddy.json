@@ -27,7 +27,7 @@
       "chapter_title": "a",
       "chapter_url": "a",
       "chapter_date": "#c-1 > a:nth-child(1) > div:nth-child(1) > time:nth-child(2)",
-      "chapter_list_expand_button": "#show-more-chapters span"
+      "chapter_list_expand_button": "#show-more-chapters > span:nth-child(1)"
     },
     "chapter": {
       "content": ".content-inner",
