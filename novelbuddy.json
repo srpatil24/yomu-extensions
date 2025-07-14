@@ -29,10 +29,10 @@
       "chapter_date": "#c-1 > a:nth-child(1) > div:nth-child(1) > time:nth-child(2)"
     },
     "chapter": {
-      "content": ".chapter-content",
-      "title": ".chapter-title",
-      "next_chapter": ".next-chapter a",
-      "prev_chapter": ".prev-chapter a"
+      "content": ".content-inner",
+      "title": "#chapter__content > h1:nth-child(1)",
+      "next_chapter": "#btn-next",
+      "prev_chapter": "#btn-prev"
     }
   },
   "urls": {
