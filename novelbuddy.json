@@ -20,7 +20,7 @@
       "title": "div.name.box h1",
       "author": "div.meta:nth-child(2) > p:nth-child(1) > a:nth-child(2) > span:nth-child(1)",
       "description": "p.content",
-      "cover": ".img-cover > img:nth-child(1)",
+      "cover": ".img-cover img",
       "status": "div.meta:nth-child(2) > p:nth-child(2) > a:nth-child(2) > span:nth-child(1)",
       "genres": ".novel-genres .genre, .genres a",
       "chapter_list": ".chapter-list li",
@@ -49,6 +49,7 @@
       "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
     },
     "requires_login": false,
+    "reverse_chapter_order": false,
     "search_delay": 1500
   }
 }
