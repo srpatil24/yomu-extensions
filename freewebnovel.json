@@ -16,7 +16,7 @@
       "novel_url": "h3.tit a",
       "next_page": ".pagination .next"
     },
-        "popular": {
+    "popular": {
       "novel_list": ".li-row",
       "novel_title": "h3.tit a",
       "novel_author": ".novel-author",
@@ -52,7 +52,7 @@
     }
   },
   "urls": {
-    "search": "/search?q={query}&page={page}",
+    "search": "/search?searchkey={query}&page={page}",
     "popular": "/sort/most-popular?page={page}",
     "latest": "/latest?page={page}",
     "novel_detail": "{novel_url}"

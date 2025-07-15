@@ -18,11 +18,11 @@
       "next_page": ".pagination .next"
     },
     "popular": {
-      "novel_list": ".top-book-item",
-      "novel_title": ".top-title a",
-      "novel_author": ".top-author",
-      "novel_cover": ".top-cover img",
-      "novel_url": ".top-title a",
+      "novel_list": ".book-item",
+      "novel_title": "h3 a",
+      "novel_author": ".novel-author",
+      "novel_cover": "a img",
+      "novel_url": "h3 a",
       "next_page": ".pagination .next"
     },
     "latest": {
