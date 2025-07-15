@@ -9,21 +9,21 @@
   "icon_url": "https://freewebnovel.com/favicon.ico",
   "selectors": {
     "search": {
-      "novel_list": ".novel-item",
-      "novel_title": ".novel-title",
+      "novel_list": ".li-row",
+      "novel_title": "h3.tit a",
       "novel_author": ".novel-author",
-      "novel_cover": ".novel-cover img",
-      "novel_url": ".novel-title a",
+      "novel_cover": ".pic a img",
+      "novel_url": "h3.tit a",
       "next_page": ".pagination .next"
     },
     "novel": {
       "title": "h1, h3",
       "author": ".novel-author",
       "description": ".novel-description, .description",
-      "cover": ".novel-cover img",
-      "status": ".novel-status",
-      "genres": ".novel-genres .genre, .genres a",
-      "chapter_list": ".chapter-list .chapter, .chapter-item",
+      "cover": ".m-imgtxt div.pic img",
+      "status": "div.item:nth-child(6) > div:nth-child(2) > span:nth-child(1) > a:nth-child(1)",
+      "genres": "div.item div.right",
+      "chapter_list": "#idData li",
       "chapter_title": "a",
       "chapter_url": "a",
       "chapter_date": ".chapter-date"
