@@ -31,11 +31,11 @@
       "cover": ".book-cover img",
       "status": ".book-status",
       "genres": ".book-genres .genre, .genres a",
-      "chapter_list": "a[href*='/chapter-']",
-      "chapter_title": "[href]",
-      "chapter_url": "[href]",
-      "chapter_date": "",
-      "chapter_list_next_page": "a:contains('Next »')"
+      "chapter_list": "ul.chapter-list li",
+      "chapter_title": "strong.chapter-title",
+      "chapter_url": "a",
+      "chapter_date": "time.chapter-update",
+      "chapter_list_next_page": "a.page-link[rel='next']"
     },
     "chapter": {
       "content": "#content p",
