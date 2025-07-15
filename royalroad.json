@@ -7,8 +7,25 @@
   "author": "Yomu Team",
   "description": "Popular English web novel platform with original fantasy and sci-fi stories",
   "icon_url": "https://www.royalroad.com/dist/img/favicon/favicon-96x96.png",
+  
   "selectors": {
     "search": {
+      "novel_list": ".fiction-list .fiction-list-item",
+      "novel_title": ".fiction-title a",
+      "novel_author": ".author",
+      "novel_cover": ".fiction-cover img",
+      "novel_url": ".fiction-title a",
+      "next_page": ".pagination .next"
+    },
+    "popular": {
+      "novel_list": ".fiction-list .fiction-list-item",
+      "novel_title": ".fiction-title a",
+      "novel_author": ".author",
+      "novel_cover": ".fiction-cover img",
+      "novel_url": ".fiction-title a",
+      "next_page": ".pagination .next"
+    },
+    "latest": {
       "novel_list": ".fiction-list .fiction-list-item",
       "novel_title": ".fiction-title a",
       "novel_author": ".author",
@@ -35,6 +52,7 @@
       "prev_chapter": ".nav-previous a"
     }
   },
+  
   "urls": {
     "search": "/fictions/search?title={query}&page={page}",
     "popular": "/fictions/best-rated?page={page}",
@@ -42,6 +60,7 @@
     "novel_detail": "{novel_url}",
     "chapter_list": "{novel_url}"
   },
+  
   "settings": {
     "delay_between_requests": 3000,
     "max_concurrent_requests": 1,
@@ -50,6 +69,8 @@
       "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
     },
     "requires_login": false,
-    "search_delay": 1000
+    "search_delay": 1000,
+    "reverse_chapter_order": false,
+    "separate_chapter_list_page": false
   }
-} 
+}
