@@ -32,10 +32,10 @@
       "status": ".book-status",
       "genres": ".book-genres .genre, .genres a",
       "chapter_list": "a[href*='/chapter-']",
-      "chapter_title": ".",
-      "chapter_url": ".",
+      "chapter_title": "[href]",
+      "chapter_url": "[href]",
       "chapter_date": "",
-      "chapter_list_next_page": "a[href*='page=']:contains('Next'), a:contains('Next »')"
+      "chapter_list_next_page": "a:contains('Next »')"
     },
     "chapter": {
       "content": "#content p",
