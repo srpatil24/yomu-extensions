@@ -45,10 +45,10 @@
       "chapter_date": ".chapter-date"
     },
     "chapter": {
-      "content": ".chapter-content",
-      "title": ".chapter-title",
-      "next_chapter": ".next-chapter a",
-      "prev_chapter": ".prev-chapter a"
+      "content": "#article",
+      "title": "#article h4",
+      "next_chapter": "#next_url",
+      "prev_chapter": "#prev_url"
     }
   },
   "urls": {
