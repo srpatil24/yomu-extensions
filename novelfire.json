@@ -38,7 +38,7 @@
       "chapter_list_next_page": "a.page-link[rel='next']"
     },
     "chapter": {
-      "content": "#content p",
+      "content": "#content",
       "title": "#content h3",
       "next_chapter": ".next-chapter a",
       "prev_chapter": ".prev-chapter a"
