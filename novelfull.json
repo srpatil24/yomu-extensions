@@ -40,7 +40,7 @@
       "cover": ".book img",
       "status": ".info div:contains('Status:') span",
       "genres": ".info div:contains('Genre:') a",
-      "chapter_list": "#list-chapter li",
+      "chapter_list": "#list-chapter ul.list-chapter > li",
       "chapter_title": "a",
       "chapter_url": "a",
       "chapter_date": ".chapter-time"
