@@ -43,7 +43,7 @@
       "chapter_list": ".chapter-list li",
       "chapter_title": "a",
       "chapter_url": "a",
-      "chapter_list_expand_button": "#show-more-chapters"
+      "chapter_list_expand_button": "#show-more-chapters span"
     },
     "chapter": {
       "content": ".content-inner",
